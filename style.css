@@ -1,0 +1,21 @@
+#mybutton{
+    background-color: hsl(216, 76%, 42%);
+    display: block;
+    margin: auto;
+    box-shadow: 3px 3px 5px hsl(0, 13%, 53%);
+
+
+}
+#mybutton:hover{
+    background-color: hsl(216, 52%, 49%);
+    cursor: pointer;
+}
+.container textinput{
+    display: block;
+    margin: auto;
+}
+body{
+    background-color: hsl(0, 4%, 5%);
+    width : 30em;
+    height: 30em;
+}

@@ -1,0 +1,29 @@
+{
+    "manifest_version" : 3,
+    "name" : "Leetcode Buddy",
+    "version" : "1.0",
+
+    "permissions" : ["activeTab","storage","scripting"],
+
+    
+
+    "action" : {
+        "default_popup" : "popup.html",
+        "default_icon" : "icon.svg"
+    },
+     "content_scripts" : [
+        {
+            "js" : ["content.js"],
+            "matches" : ["https://leetcode.com/problems/"]
+        }
+    ],
+    "background" : {
+        "service_worker" : "background.js"
+    },
+
+    "options_page" : "options.html",
+    "host_permissions" : ["https://leetcode.com/problems/"]
+
+
+   
+}
