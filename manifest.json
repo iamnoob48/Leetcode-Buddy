@@ -4,6 +4,7 @@
     "version" : "1.0",
 
     "permissions" : ["activeTab","storage","scripting"],
+    "host_permissions" : ["https://leetcode.com/*"],
 
     
 
@@ -14,15 +15,17 @@
      "content_scripts" : [
         {
             "js" : ["content.js"],
-            "matches" : ["https://leetcode.com/problems/"]
+            "matches" : ["https://leetcode.com/problems/*"]
+            
+            
         }
     ],
     "background" : {
         "service_worker" : "background.js"
     },
 
-    "options_page" : "options.html",
-    "host_permissions" : ["https://leetcode.com/problems/"]
+    "options_page" : "options.html"
+    
 
 
    
